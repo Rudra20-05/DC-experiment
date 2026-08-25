@@ -79,7 +79,7 @@ def predict_api():
     return jsonify({
         "result": result,
         "probability": confidence,
-        "message": "No Disease Detected" if result == 1 else "Heart Disease Detected",
+        "message": "No Disease Detected" if result == 1 else "Heart Disease Detected please consult with Doctor",
         "risk_level": risk_level,
         "tips": tips
     })
