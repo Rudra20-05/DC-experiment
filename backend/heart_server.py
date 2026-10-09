@@ -10,7 +10,7 @@ import heart_pb2_grpc
 from lamport_clock import LamportClock
 
 # Load model once
-model = load_model("model.h5")
+model = load_model("model_compat_test.h5", compile=False)
 scaler = joblib.load("scaler.pkl")
 
 # Lamport Clock
